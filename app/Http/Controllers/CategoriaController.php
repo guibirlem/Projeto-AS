@@ -40,8 +40,8 @@ class CategoriaController extends Controller
 
     public function destroy($id)
     {
-        $categorias = Categoria::findOrFail($id);
-        $categorias->delete();
-        return redirect('categorias')->with('success', 'Categoria deletado com sucesso.');
+        $produtos = Categoria::findOrFail($id);
+        $produtos->delete();
+        return redirect('categorias')->with('success', 'produto deleted successfully.');
     }
 }
